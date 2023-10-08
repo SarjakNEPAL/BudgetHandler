@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family:sans-serif;
+}
+
+.banner /*wallpaper of website*/
+{
+   width:100%;
+   height:100vh;
+   background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)),url("https://images.pexels.com/photos/12857684/pexels-photo-12857684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+   background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;;
+}   
+
+.navbar{
+    width:85%;
+    margin:auto;
+    padding:15px px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width:120px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration:none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: ' ';
+    height:3px;
+    width:0;
+    background: #009688;
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+
+.logotxt
+{
+    font-size: 50px;
+    float: right;
+    font-family:serif;
+    color: rgb(245, 232, 226);
+    text-shadow: 4px 4px 4px #362d2d;
+}
+.content{
+    width:100%;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50px);
+    text-align: center;
+    color:white;
+    margin-top: -50px;
+}
+
+.content h1{
+    font-size:50px;
+    margin-top:80px;
+    padding-left:20px;
+    padding-right:20px;
+    transform: translateY(-80px);
+    background-color:rgb(119, 75, 75);
+    border-radius: 25px;
+    border: 2px solid black;
+    font-family:cursive;
+
+}
+
+
+.topban{
+    background:rgba(107, 90, 90, 0.7);
+    display:flex;
+}
+
+.butt{
+    width:200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color:white;
+    cursor:pointer;
+    border-width: 100%;
+}
+
+input:hover .butt
+{
+    border: 2px solid red;
+}
+button:hover{
+     border: 2px solid green;
+    transition: 0.5s;
+    left:0;
+    bottom:0;
+    border-width: 100%;
+
+}
+
+.loginbox{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: auto;
+    margin:10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 15px;
+    float:right;
+    justify-content: left;
+    background:#556664;
+    border-radius: 25px;
+    border: 2px solid grey;
+    
+}
+
+h1{
+    font-size: large;
+    font-style: italic;
+}
+
+.loginside{
+    float:left;
+    justify-content: center;
+    background:rgba(63, 24, 19, 0.75);
+    border:2px solid;
+    border-radius: 25px;
+    margin-top:-10px;
+    padding-bottom: -50px;
+}
+
+.Loginpmp{
+    float: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin:20px;
+    transform:translateY(-50px);
+    padding:-20px;
+}
+h2{
+    transform:translateY(-50px);
+    background: #1e2e2c;
+    border:2px solid grey;
+    border-radius: 25px;
+    font-size: 50px;
+
+}
+
+.Loginpmp p{
+    border:2px solid #009688;
+    border-radius: 25px;
+    background: #1e2e2c;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    box-sizing: content-box;
+}
+
+.loginbox input{
+    background: #becac9;
+    border:2px solid #009688;
+    border-radius: 25px; 
+    margin-top: 10px;
+    font-size: large;
+}
+table{
+    font-size: 55;
+    font-style: bold;
+    border-color: rgb(13, 42, 42,100);
+    border-width: 10px;
+    background-color:#184b46;
+    border-radius: 10%;
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(185, 170, 170);
+}
