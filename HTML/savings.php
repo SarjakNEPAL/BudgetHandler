@@ -16,7 +16,6 @@
             <img src="../Pics/logo.png" class="logo" onClick="../HTML/dashboard.php"><h1 class="logotxt">Sarjak Budget Helper</h1>
             <ul>
                 <li><a href="../HTML/dashboard.php">dashboard</a></li>
-                
                 <li><a href="../HTML/Support.html">Support</a></li>
             </ul>
         </div> 
