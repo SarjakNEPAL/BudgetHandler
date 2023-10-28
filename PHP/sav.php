@@ -6,7 +6,6 @@
             $isok=false;
             $existence=false;
             $eaac=$_SESSION['username'];
-            echo $eaac;
 
             echo ('<script>console.log ("connecting to database",$e)</script>');
             if($conn->connect_error)
@@ -18,7 +17,7 @@
             }
             
             $query="SELECT * FROM sav WHERE Username='$eaac'";
-            echo($eaac);
+
             $result=mysqli_query($conn,$query);
 
             while($row=mysqli_fetch_assoc($result))
