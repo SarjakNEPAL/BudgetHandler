@@ -3,10 +3,10 @@
     <?php 
         include('../PHP/globvar.php');
         include("../PHP/seschk.php");
-        $_SESSION['username']=$_SESSION['username'];
     ?>
     <head>
         <link rel="stylesheet" href="../CSS/index.css">
+        <link rel="icon" type="image/png" href="../Pics/logo.png" sizes="32x32">
         <title>Dashboard</title>
     </head>
     <body>
