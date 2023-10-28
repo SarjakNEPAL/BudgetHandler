@@ -15,8 +15,7 @@
             <div class="navbar">
                 <img src="../Pics/logo.png" class="logo"><h1 class="logotxt">Sarjak Budget Helper</h1>
                 <ul>
-                    <li><a href="logout.php">logout</a></li>
-                    <li><a href="Support.html">Support</a></li>
+                    <li><a href="../PHP/logout.php">logout</a></li>
                 </ul>
             </div> 
             </span>
@@ -33,7 +32,4 @@
             </div>
         </div>
     </body>
-    <?php
-    include('../PHP/globvar.php');
-    ?>
 </html>

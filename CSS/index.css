@@ -8,11 +8,11 @@
 {
    width:100%;
    height:100vh;
-   background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)),url("https://images.pexels.com/photos/12857684/pexels-photo-12857684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+   background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)),url("https://th.bing.com/th/id/R.63096d562b743bd428da3be6b1ddfe84?rik=j2zaaH3S1RGMQw&pid=ImgRaw&r=0");
    background-size:cover;
     background-repeat:no-repeat;
     background-position: center;;
-}   
+} 
 
 .navbar{
     width:85%;
@@ -65,11 +65,11 @@
 .content{
     width:100%;
     position:absolute;
-    top:50%;
+    top:40%;
     transform:translateY(-50px);
     text-align: center;
     color:white;
-    margin-top: -50px;
+    margin-top: -40px;
 }
 
 .content h1{

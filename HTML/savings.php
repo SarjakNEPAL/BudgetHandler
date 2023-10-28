@@ -2,13 +2,14 @@
     <meta charset="utf8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../CSS/savings.css">
+    <link rel="icon" type="image/png" href="Pics/logo.png" sizes="32x32">
     <script type="text/javascript" src="../JS/VldRG.js"></script>
     <?php
         include("../PHP/globvar.php");
         include("../PHP/seschk.php");
         include("../PHP/conn.php");
     ?>
-    <HEAD><TITLE>SBH</TITLE></HEAD>
+    <HEAD><TITLE>Savings</TITLE></HEAD>
     <BODY>      
         <div class="banner">
         <span class="topban">
@@ -16,7 +17,7 @@
             <img src="../Pics/logo.png" class="logo" onClick="../HTML/dashboard.php"><h1 class="logotxt">Sarjak Budget Helper</h1>
             <ul>
                 <li><a href="../HTML/dashboard.php">dashboard</a></li>
-                <li><a href="../HTML/Support.html">Support</a></li>
+        
             </ul>
         </div> 
         </span>

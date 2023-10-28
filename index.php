@@ -6,8 +6,9 @@
         }
     ?>
     <head>
-        <title>HOME</title>
+        <title>SBH</title>
         <link rel="stylesheet" href="CSS/index.css">
+        <link rel="icon" type="image/png" href="Pics/logo.png" sizes="32x32">
     </head>
     <body>
         <div class="banner">

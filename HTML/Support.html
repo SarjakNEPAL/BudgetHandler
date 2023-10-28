@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Support</title>
+        <link rel="stylesheet" href="../CSS/db.css">
+        <link rel="icon" type="image/png" href="../Pics/logo.png" sizes="32x32">
+    </head>
+    <body>
+        <div class="banner">
+            <span class="topban">
+            <div class="navbar">
+                <img src="../Pics/logo.png" class="logo"><h1 class="logotxt">Sarjak Budget Helper</h1>
+                <ul>
+                    <li><a href="../index.php">Home</a></li>
+                    <li><a href="../HTML/HOME.php">Login</a></li>
+                    <li><a href="../HTML/reg.php">Register</a></li>
+                    
+                </ul>
+            </div> 
+            </span>
+            <div class="content">
+                <p> Sorry if you are having Problem using this website. If you have any query about<br> bugs and issues on this website, you can see <a href="../HTML/about.html"> HERE. </a>
+                    <h2><b>How to Login?</b></h2><br>
+                    <p> First of all, be sure to have a registed account. <b>If you havent registered,<a href="../HTML/reg.php"> REGISTER HERE.</a><br> </b> If you are a registered user 
+                     first go to <a href="../HTML/HOME.php">Login Page </a>  and enter your <b>registered Username and Password.</b></p>
+                    <h2><b>How to Register?</b></h2><br>
+                    <p> First of all, be sure you dont a registed account. <b>If you have already registered,<a href="../HTML/HOME.php"> LOGIN HERE.</a><br> </b> If you are not a registered user 
+                     first go to <a href="../HTML/reg.php">Register Page </a>  and enter your <b>Unique</b> Username and Password.<br><br><b><u> be sure to consider these points:</u></b></p>
+                     <ol type="1" align="left">
+                        <li>Make a strong password</li>
+                        <li>Make your password atleast <b>8 character long.</b></li>
+                        <li>As recovery of account takes time.So <b>keep your credentials safe.</b></li>
+                     </ol>
+                     <h2>Forgot your password?</h2>
+                     <p><B><U><I>WE ARE EXTREMELY SORRY</I></U></B> but the automatic password recovery system is not initialized.<br> Try insterting all possible known passwords. 
+                    If you fail to get your password as there is no limitaions on instering password. If you fail please contact the creator via email.
+                    <input type="button" value="Copy Email" onclick="cpyem()">
+            </div>
+            <script>
+                function cpyem(){
+                   
+                        var text = "sarjakytdfiles@gmail,com";
+                        navigator.clipboard.writeText(text).then(function() {
+                        console.log('Async: Copying to clipboard was successful!');
+                        }, function(err) {
+                        console.error('Async: Could not copy text: ', err);
+                        }); 
+                }
+            </script>
+        </marquee>
+        </div>
+        </body>
+</html>
