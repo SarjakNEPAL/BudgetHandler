@@ -25,14 +25,14 @@
             <span class="loginbox">
                 <form name="savings" method="post" action="../PHP/sav.php">
 
-               <br>Savings to add: <input type="number" id="add" name="add" value="0">
-                <br>Amount to be deducted: <input type="number" id="subs" name="subs" value=0><br>
+               <br>Addition: <input type="number" id="add" name="add" value="0">
+                <br>Substraction: <input type="number" id="subs" name="subs" value=0><br>
                 <input type="Submit" class="butt" value="Proceed" name="submit">
                  </form>  
                 </span><br>
                 <span class="details">
                     <table border="1" >
-                        <th>SAVINGS</th>
+                        <th>Savings</th>
                         <Tr><td align=centre><div id="result">Rs:
                             <?php 
 

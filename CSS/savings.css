@@ -174,7 +174,7 @@ h2{
     padding-top:20px;
     padding-bottom:20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    justify-content: center;
+    justify-content: left;
     box-sizing: content-box;
 }
 
@@ -182,16 +182,19 @@ h2{
     background: #becac9;
     border:2px solid #009688;
     border-radius: 25px; 
-    margin-top: 10px;
+    margin-top: 9px;
     font-size: large;
+    font-style: left;
 }
 table{
     font-size: 55;
     font-style: bold;
-    border-color: rgb(13, 42, 42,100);
-    border-width: 10px;
-    background-color:#184b46;
-    border-radius: 10%;
+    border-color:#009688;
+    border-width: 15px;
+    background-color:#becac9;
+    border-radius: 9%;
     font-family:'Times New Roman', Times, serif;
-    color:rgb(185, 170, 170);
+    color:rgb(7, 1, 1);
+    justify-content: center;
+    box-sizing: content-box;
 }

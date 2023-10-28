@@ -19,21 +19,16 @@
                         <li><a href="../HTML/Support.html">Support</a></li>
                     </ul>
                 </div> 
-            </span>
-            <div class="content">
-                <div class="Loginpmp">
-                    <h1>Login For Existing Users</h1>
-                    <h2>Welcome Back!</h2>
-                    <p>Please enter your registered Username And Password.<br> If you are new to this site then please register.<br> If you face any problem while login/ register, please contact support on the "Support" menu.</p>
-                </div>      
-                <span class="loginbox">
+            </span>            
+            <span class="loginbox">
                     <form name="regst" onsubmit="return validateForm()" method="post" action="../PHP/USLG.php">
                     <br>Username: <input type="text" id="User" name="User">
                     <br>Password: <input type="password" id="pass" name="pass"><br>
                     <input type="Submit" class="butt" value="Login" name="submit">
                     </form>  
-                </span>
-            </div>
-        </div>
+            </span>
+            
+            
+      </div>
     </BODY>
 </html>
