@@ -50,25 +50,14 @@ else
     echo ('<script>alert("Username is already taken. Please use another Username")</script>');
             $isok=true;
     $isok=true;
-    echo ('
-    <script>
-    location.href = "../HTML/HOME.php";
-    location.replace("../HTML/HOME.php");
-    location.assign("../HTML/HOME.php");
-    </script>
-    ');
+    header('../HTML/HOME.php');
+    die();
 }
 $conn->close();
 if($isok==true)
 {
-    echo ('
-    <script>
-    location.href = "../HTML/dashboard.php";
-    location.replace("../HTML/dashboard.php");
-    location.assign("../HTML/dashboard.php");
-    </script>
-    
-    ');
+    header('../HTML/dashboard.php');
+    die();
 }
 ?>
 
