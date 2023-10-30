@@ -29,8 +29,7 @@
     }
 
 if($existence==false){  
-    echo (" Creating New Account"."<br>");
-    
+  
     if($stat_chk="Positive")
         $sql="insert into logininfo(Username,Password) values(?,?)";
          $stmt=$conn->prepare($sql);
@@ -42,22 +41,24 @@ if($existence==false){
             $isok=true;
            } else {
             echo ('<script>console.log ("record creation failure")</script>');
-            $isok=true;
+            $isok=false;
     }
 }
 else
 {   echo ('<script>console.log ("existence of primary keyed data")</script>');
     echo ('<script>alert("Username is already taken. Please use another Username")</script>');
-            $isok=true;
-    $isok=true;
-    header('../HTML/HOME.php');
-    die();
+
+    $isok=false;
 }
 $conn->close();
 if($isok==true)
 {
-    header('../HTML/dashboard.php');
-    die();
+    echo ('<script>alert("Successfully registered. Please Login")</script>');
+    include('../HTML/HOME.php');
+    
+}
+else{
+    include('../HTML/reg.php');
 }
 ?>
 
