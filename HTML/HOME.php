@@ -16,16 +16,17 @@
                 <img src="../Pics/logo.png" class="logo"><h1 class="logotxt">Sarjak Budget Helper</h1>
                     <ul>
                         <li><a href="../index.php">Home</a></li>
-                        <li><a href="../HTML/reg.php">Register</a></li>
                         <li><a href="../HTML/Support.html">Support</a></li>
+                        <li><a href="../HTML/reg.php" ><div class="highbutt">Register<div></a></li>
+                        
                     </ul>
                 </div> 
             </span>            
             <span class="loginbox">
-                    <form name="regst" onsubmit="return validateForm()" method="post" action="../PHP/USLG.php">
+                    <form name="regst" onsubmit="return validateForm()" method="post" action="../PHP/USLG.php"><center>
                     <br>Username: <input type="text" id="User" name="User">
                     <br>Password: <input type="password" id="pass" name="pass"><br>
-                    <input type="Submit" class="butt" value="Login" name="submit">
+                    <input type="Submit" class="butt" value="Login" name="submit"></center>
                     </form>  
             </span>
             

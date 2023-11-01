@@ -16,19 +16,13 @@ function validateForm()
       
     }
 
-    if(y==null || y=="")
+   if(y==null || y=="")
     {
         alert("Password is mandatory");
         iso= false;
    
     }
-    else
-    {
-        iso= true;
-   
-    }
-
-    if(sz<8)
+    else if(sz<8)
     {
         alert("Password must cointain at least 8 characters");
         iso=false;

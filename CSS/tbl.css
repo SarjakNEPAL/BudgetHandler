@@ -1,0 +1,93 @@
+*{
+    margin:0px;
+    padding:0px;
+    justify-content: center;
+    font-size: 25px;
+    color:white;
+}
+
+.canvas{ /*body*/
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)),url("https://th.bing.com/th/id/R.63096d562b743bd428da3be6b1ddfe84?rik=j2zaaH3S1RGMQw&pid=ImgRaw&r=0");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.navbar{ /* upper navigation panel*/
+    width:85%;
+    display:flex;
+    margin:auto;
+    padding:15px px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    padding-right: 10px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 25px;
+    position:relative;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: ' ';
+    height:3px;
+    width:0;
+    background: #009688;
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+.logotxt
+{
+    font-size: 50px;
+    float: right;
+    font-family:serif;
+    color: rgb(245, 232, 226);
+    text-shadow: 4px 4px 4px #362d2d;
+}
+.topban{
+    background:rgba(107, 90, 90, 0.7);
+    display:flex;
+}
+
+.subban{
+    background-color: #4b3939;
+    border:2px solid rgb(87, 65, 65);
+    display:flex;
+    margin:auto;
+    padding:15px px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.subban ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 100px;
+    position:relative;
+    padding-left: 100px;
+}
+
+.subban ul li a{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
