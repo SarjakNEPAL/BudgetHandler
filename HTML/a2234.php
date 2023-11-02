@@ -9,7 +9,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../Pics/logo.png">
-        <script src="../JS/Vdlexp.js"></script>
+        <script src="../JS/Vldexp.js"></script>
         <link rel="stylesheet" href="../CSS/tbl2.css">
         <title>EXP-ADD</title>
     </head>
@@ -31,13 +31,15 @@
                     </ul>
             </div>
             <div class="MCanvas">
+                
                 <div class="Ment">
-                    <form name="entry" id="frm" onsubmit="return validateForm()" method="post"><center>
-                    <br>Title :<input type="text" id="Title" name="Title">
-                    <br>Amount :<input type="Number" id="amt" name="amt"><br>
+                <center>    
+                <form name="ent" onsubmit="return validateForm()" method="post" action="../PHP/adexp.php">
+                    <br>Title :<input type="text" name="Title" placeholder="REQUIRED">
+                    <br>Amount :<input type="Number" id="amt" name="amt" placeholder="REQUIRED" ><br>
                     <br><div class="catedrop">
-                            <label for="cars">Category:</label>
-                                <select name="category" id="category" name="cate">
+                            <label for="category">Category:</label>
+                                <select name="category" id="category">
                                     <option value="Household">Household</option>
                                     <option value="Education">Education</option>
                                     <option value="Health">Health</option>
@@ -45,10 +47,12 @@
                                 </select>
                         </div>
                         <br>Date:<input type="date" name="dati" id="dati">
-                        <br>Remarks:<input type="text" name="remark" id="remark"><br>
-                        <input type="Submit" class="butt" value="Add" name="submit"></center>
-                    </form>  
+                        <br>Remarks:<input type="text" name="remark" id="remark" placeholder="OPTIONAL"><br>
+                        <input type="Submit" class="butt" value="Add" name="submit">
+                    </form>
+                    </center>  
                 </div>
+                
             </div>
         </div>  
 </body>
