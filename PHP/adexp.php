@@ -32,7 +32,7 @@
 $conn->close();
 if($isok==true)
 {
-    include('../HTML/a2234.php');    
+    include('../HTML/exp.php');    
 }
 else{
     include('../HTML/a2234.php');

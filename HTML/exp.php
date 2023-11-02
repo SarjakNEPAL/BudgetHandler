@@ -44,15 +44,16 @@
                     $sql = "SELECT spnt_name, spnt_amt, category, remarks, date FROM expenditure";
                     $result = $conn->query($sql);
 
+                    echo "<table><caption>Expenditures<caption><tr><th>Sno.</th><th>Spent Name</th><th>Spent Amount</th><th>Category</th><th>Remarks</th><th>Date</th></tr>";
+                    $id=1;
                     if ($result->num_rows > 0) {
-                    echo "<table><caption>Expenditures<caption><tr><th>Spent Name</th><th>Spent Amount</th><th>Category</th><th>Remarks</th><th>Date</th></tr>";
                     // output data of each row
                     while($row = $result->fetch_assoc()) {
-                        echo "<tr><td>".$row["spnt_name"]."</td><td>".$row["spnt_amt"]."</td><td>".$row["category"]."</td><td>".$row["remarks"]."</td><td>".$row["date"]."</td></tr>";
+                        echo "<tr align='center'><td>".$id."</td><td>".$row["spnt_name"]."</td><td>".$row["spnt_amt"]."</td><td>".$row["category"]."</td><td>".$row["remarks"]."</td><td>".$row["date"]."</td></tr>";
                     }
                     echo "</table>";
                     } else {
-                    echo "0 results";
+                        echo "<tr><td align='center'>Spend Someting!!</td><td align='center'>Spend Someting!!</td><td align='center'></td><td align='center'>Spend Someting!!</td><td align='center'></td></tr>";
                     }
                     $conn->close();
                 ?>
