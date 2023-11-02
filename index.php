@@ -16,9 +16,9 @@
             <div class="navbar">
                 <img src="Pics/logo.png" class="logo"><h1 class="logotxt">Sarjak Budget Helper</h1>
                 <ul>
-                    <li><a href="index.php">Home</a></li>
                     <li><a href="HTML/about.html">About</a></li>
                     <li><a href="HTML/Support.html">Support</a></li>
+                    <li><a href="HTML/reg.php" class="butt">Register</a></li>
                 </ul>
             </div> 
             </span>
