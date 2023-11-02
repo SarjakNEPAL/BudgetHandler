@@ -3,7 +3,8 @@
     padding:0px;
     line-height: 100%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size:25px;}
+    font-size:25px;
+}
 
 .canvas{
     width:100%;
@@ -12,6 +13,8 @@
     background-size:cover;
      background-repeat:no-repeat;
      background-position: center;;
+    background-attachment: fixed;
+    overflow: hidden;
  }  
 
  .navbar{
@@ -96,6 +99,7 @@
 .canvas{
     line-height: 110%;
     font-size:25px;
+    overflow: hidden;
 }
 .ment{
     color:white;
@@ -136,4 +140,50 @@
 
 .subban ul li:hover{
     background: linear-gradient(#4b3939,rgba(68, 59, 59, 1));
+}
+
+table {
+    color:white;
+    width:99%;
+    background-color: rgba(107, 90, 90, 0.7);
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    margin:10px 10px;
+    padding:2%;
+}
+
+table caption{
+    font-size: 32px;
+    background-color: #043833;
+    border:2px solid black;
+    margin:1%;
+}
+
+table tr td{
+    border:2px solid#04201e;
+    background: #babebe;
+    color:black;
+}
+
+table tr th{
+    border:2px solid#104868;
+    background: #bebcba;
+    color:black;
+    position: sticky;
+}
+
+.Viewing{
+    overflow-x: scroll;
+    height:80%;
+    overflow-y: visible;
+}
+
+table tr td:hover{
+    background-color: white;
+    font-size: 25px;
+    border:green;
+}
+
+.Viewing::-webkit-scrollbar-y{
+    display:none;
 }
