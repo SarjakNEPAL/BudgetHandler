@@ -14,21 +14,14 @@
         <title>EXP-ADD</title>
     </head>
     <body>
-        <div class="canvas">
-            <span class="topban">
-                <div class="navbar">
-                    <img src="../Pics/logo.png" class="logo">
-                    <h1 class="logotxt">Sarjak Budget Helper</h1>
-                    <ul>
-                        <li><a href="../HTML/dashboard.php">Back</a></li>
-                    </ul>
-                </div>
-            </SPAN>
-             <div class="subban">
-                    <ul>
-                        <li><a href="../HTML/exp.php">View</a></li>
-                        <li><a href="../HTML/edt2234.php">Edit</a></li>
-                    </ul>
+    <div class="canvas">
+            <div class="subban">
+                <ul>
+                    <li><a href="../HTML/edt2234.php">Edit</a></li>
+                    <li><a href="../HTML/exp.php">View</a></li>
+                    <li><a href="../HTML/dashboard.php">Back</a></li>
+                </ul>
+            </div>
             </div>
             <div class="MCanvas"> 
                 <div class="Ment">
