@@ -53,7 +53,7 @@
                     }
                     echo "</table>";
                     } else {
-                        echo "<tr><td align='center'>Spend Someting!!</td><td align='center'>Spend Someting!!</td><td align='center'></td><td align='center'>Spend Someting!!</td><td align='center'></td><td></td></tr>";
+                        echo "<tr><td align='center'>$id</td><td align='center'>Spend Someting!!</td><td align='center'></td><td align='center'>Spend Someting!!</td><td align='center'></td><td></td></tr>";
                     }
                     $conn->close();
                 ?>
