@@ -29,7 +29,7 @@
                 <div class="subban">
                     <ul>
                         <li><a href="../HTML/a2234.php">Add</a></li>
-                        <li><a href="../HTML/edt.php">Edit</a></li>
+                        <li><a href="../HTML/edt2234.php">Edit</a></li>
                     </ul>
                 </div>
             </script>
@@ -44,7 +44,7 @@
                     $sql = "SELECT spnt_name, spnt_amt, category, remarks, date FROM expenditure";
                     $result = $conn->query($sql);
 
-                    echo "<table><caption>Expenditures<caption><tr><th>Sno.</th><th>Spent Name</th><th>Spent Amount</th><th>Category</th><th>Remarks</th><th>Date</th></tr>";
+                    echo "<table><caption>Expenditures - View<caption><tr><th>Sno.</th><th>Spent Name</th><th>Spent Amount</th><th>Category</th><th>Remarks</th><th>Date</th></tr>";
                     $id=1;
                     if ($result->num_rows > 0) {
                     // output data of each row
@@ -53,7 +53,7 @@
                     }
                     echo "</table>";
                     } else {
-                        echo "<tr><td align='center'>Spend Someting!!</td><td align='center'>Spend Someting!!</td><td align='center'></td><td align='center'>Spend Someting!!</td><td align='center'></td></tr>";
+                        echo "<tr><td align='center'>Spend Someting!!</td><td align='center'>Spend Someting!!</td><td align='center'></td><td align='center'>Spend Someting!!</td><td align='center'></td><td></td></tr>";
                     }
                     $conn->close();
                 ?>
