@@ -8,7 +8,7 @@
 {
    width:100%;
    height:100vh;
-   background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)),url("https://th.bing.com/th/id/R.63096d562b743bd428da3be6b1ddfe84?rik=j2zaaH3S1RGMQw&pid=ImgRaw&r=0");
+   background-image: linear-gradient(rgba(0, 0, 0, 0.66),rgba(0, 0, 0, 0.66)),url("https://images.pexels.com/photos/937783/pexels-photo-937783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
    background-size:cover;
     background-repeat:no-repeat;
     background-position: center;;
@@ -21,6 +21,7 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1; /* Add this line */
 }
 
 .logo{
@@ -60,7 +61,7 @@
     float: right;
     font-family:serif;
     color: rgb(245, 232, 226);
-    text-shadow: 4px 4px 4px #362d2d;
+    text-shadow: 4px 4px 4px #000000;
 }
 .content{
     color:white;
@@ -72,12 +73,46 @@
     display:flex;
 }
 
-.butt{
-    float:center;
+
+button:hover{
+     border: 2px solid green;
+    transition: 0.5s;
+    left:0;
+    bottom:0;
+    border-width: 100%;
+}
+.content{
+    width:100%;
+    position:absolute;
+    top:40%;
+    transform:translateY(-50px);
+    text-align: center;
+    color:white;
+    margin-top: -40px;
+}
+
+.content h1{
+    font-size: 80px;
+    margin-top:80px;
+
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.topban{
+    background:rgba(107, 90, 90, 0.7);
+    display:flex;
+}
+
+div button{
     width:200px;
-    padding: 15px ;
-    transform: translate(10%);
-    margin:20px 10px;
+    text-align: center;
+    margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
     border: 2px solid #009688;
@@ -87,13 +122,8 @@
     border-width: 100%;
 }
 
-input:hover.butt
-{
-    border: 2px solid rgb(0, 0, 0);
-    background-color: rgb(132, 238, 150);
-}
 button:hover{
-     border: 2px solid green;
+    border: 2px solid green;
     transition: 0.5s;
     left:0;
     bottom:0;
@@ -106,12 +136,12 @@ button:hover{
     border:2px solid #009688;
     border-radius: 25px; 
     margin-top: 10px;
-    font-size: large;
-    justify-content: center;
+    font-size: 1rem;
+    padding: 2%;
 }
 
 .loginbox{
-    font-size: large;
+    font-size: 1.7rem;
     color:white;
     position: fixed; /* or absolute */
     top: 50%;
@@ -121,9 +151,53 @@ button:hover{
     border:2px solid rgb(0, 0, 0);
     border-radius: 25px;
     margin:10px 10px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2rem;
+    padding-right: 2rem;
     justify-content: center;
+    z-index: 0; /* Add this line */
+    align-items: center;
 }
 
+/* Add this media query */
 
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+    .navbar ul li {
+        margin: 10px 0;
+        border: 0.2rem solid rgba(107, 90, 90, 0.7);
+    }
+    .navbar ul li a{
+        border: 0.2rem solid rgba(43, 30, 30, 0.7);
+        padding: 5%;
+        display: relative;
+    }
+    .navbar{
+        font-size: 25px;
+        padding:5%;
+    }
+    .logo {
+       height: 2rem;
+       width:2rem;
+    }
+    .content{
+        font-size: 3rem;
+    }
+    .navbar{
+        display:flex;
+    }
+    .banner{
+        height:100%;
+        width:100%;
+    }
+    .logotxt{
+            font-size: 2rem;
+    }
+    .content h1{
+        font-size: 3rem;
+    }
+
+
+}

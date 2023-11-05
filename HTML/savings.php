@@ -16,21 +16,14 @@
         <div class="navbar">
             <img src="../Pics/logo.png" class="logo" onClick="../HTML/dashboard.php"><h1 class="logotxt">Sarjak Budget Helper</h1>
             <ul>
-                <li><a href="../HTML/dashboard.php">dashboard</a></li>
+                <li><a href="../HTML/dashboard.php">Back</a></li>
         
             </ul>
         </div> 
         </span>
         <diV CLASS="content">
           <center>
-            <span class="loginbox">
-                <form name="savings" method="post" action="../PHP/sav.php">
-
-               <br>Addition: <input type="number" id="add" name="add" value="0">
-                <br>Substraction: <input type="number" id="subs" name="subs" value=0><br>
-                <input type="Submit" class="butt" value="Proceed" name="submit">
-                 </form>  
-                </span><br>
+            
                 <span class="details">
                     <table border="1" >
                         <th>Savings</th>
@@ -62,8 +55,16 @@
                         ?>
                         </div></td></TR>
                     </table>  
-                    </span>
+                    </span><br>
             </center>
+            <span class="loginbox">
+                <form name="savings" method="post" action="../PHP/sav.php">
+
+               <br>Addition: <input type="number" id="add" name="add" value="0">
+                <br>Substraction: <input type="number" id="subs" name="subs" value=0><br>
+                <input type="Submit" class="butt" value="Proceed" name="submit">
+                 </form>  
+                </span>
         </div>
             </div>
         </div>

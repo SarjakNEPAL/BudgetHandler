@@ -17,20 +17,19 @@
                     <ul>
                         <li><a href="../index.php">Home</a></li>
                         <li><a href="../HTML/Support.html">Support</a></li>
-                        <li><a href="../HTML/reg.php" ><div class="highbutt">Register<div></a></li>
+                        <li><a href="../HTML/reg.php" >Register</a></li>
                         
                     </ul>
                 </div> 
             </span>            
-            <span class="loginbox">
+            <span class="loginbox"><center>
                     <form name="regst" onsubmit="return validateForm()" method="post" action="../PHP/USLG.php"><center>
                     <br>Username: <input type="text" id="User" name="User">
                     <br>Password: <input type="password" id="pass" name="pass"><br>
                     <input type="Submit" class="butt" value="Login" name="submit"></center>
-                    </form>  
+                    </form>  </center>
             </span>
-            
-            
+         
       </div>
     </BODY>
 </html>

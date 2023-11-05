@@ -9,6 +9,7 @@
         <title>SBH</title>
         <link rel="stylesheet" href="CSS/index.css">
         <link rel="icon" type="image/png" href="Pics/logo.png" sizes="32x32">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="banner">
@@ -18,7 +19,6 @@
                 <ul>
                     <li><a href="HTML/about.html">About</a></li>
                     <li><a href="HTML/Support.html">Support</a></li>
-                    <li><a href="HTML/reg.php" class="butt">Register</a></li>
                 </ul>
             </div> 
             </span>
@@ -27,7 +27,7 @@
                 <p> From this website you can easily manage your Accounting and Money related operations details easily. <br>It is free to use</p>
                 <div class="buttons">
                     <a href="HTML/HOME.php"><button type="button" ><span class="butt"></span>Login</button></a>
-                    <a href="HTML/reg.php"><button type="button"><span class="butt"></span>Register</button></a>
+                    <a href="HTML/reg.php"><button type="button"><span class="butt"></span>Register For Free</button></a>
                 </div>
             </div>
         </div>

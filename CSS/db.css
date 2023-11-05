@@ -1,15 +1,14 @@
 *{
-    margin: 0rem;
-    padding:0rem;
+    margin: 0px;
+    padding:0px;
     font-family:sans-serif;
-    font-size: 25px;
 }
 
 .banner /*wallpaper of website*/
 {
    width:100%;
-   height:100vh;
-   background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)),url("https://th.bing.com/th/id/R.63096d562b743bd428da3be6b1ddfe84?rik=j2zaaH3S1RGMQw&pid=ImgRaw&r=0");
+   height:auto;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.66),rgba(0, 0, 0, 0.66)),url("../Pics/pexels-photo-2043569.jpeg");
    background-size:cover;
     background-repeat:no-repeat;
     background-position: center;;
@@ -18,14 +17,15 @@
 .navbar{
     width:85%;
     margin:auto;
-    padding:1.5rem;
+    padding:15px px;
     display:flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1; /* Add this line */
 }
 
 .logo{
-    width:5em;
+    width:120px;
     cursor: pointer;
     padding-right: 10px;
 }
@@ -43,8 +43,8 @@
 }
 .navbar ul li::after{
     content: ' ';
-    height:0.3rem;
-    width:0rem;
+    height:3px;
+    width:0;
     background: #009688;
     position: absolute;
     left:0;
@@ -57,72 +57,123 @@
 
 .logotxt
 {
-    font-size: 2rem;
+    font-size: 50px;
     float: right;
     font-family:serif;
     color: rgb(245, 232, 226);
-    text-shadow: 4px 4px 4px #362d2d;
+    text-shadow: 4px 4px 4px #000000;
 }
 .content{
-    width:100%;
-    position:fixed;
-    text-align: center;
     color:white;
-    top:20%;
-    
-}
 
+}
 
 .topban{
     background:rgba(107, 90, 90, 0.7);
     display:flex;
-    position: fixed;
 }
 
 
-h2{
-    color:bisque;
-    margin:0.5rem;
-    border: 0.1rem solid black;
-    background:rgba(170, 150, 150, 0.7);
+button:hover{
+     border: 2px solid green;
+    transition: 0.5s;
+    left:0;
+    bottom:0;
+    border-width: 100%;
+}
+.content{
+    width:100%;
+    position:absolute;
+    top:40%;
+    transform:translateY(-50px);
+    text-align: center;
+    color:white;
+    margin-top: -40px;
 }
 
-#lists{
-    background-color: rgba(95, 79, 79, 0.7);
-    content: fixed;
-    margin:5%;
-    padding-left: -10%;
-    border:2px solid black;
+.content h1{
+    font-size: 80px;
+    margin-top:80px;
+
 }
 
-p a{
-    background-color: rgb(79, 69, 126);
-    border-radius: 25%;
-    font-size: 1rem;
-    color:rgb(140, 184, 115);
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 30px;
+    font-size: 20px;
 }
 
-ol{
-    background-color: #000000;
-    padding-left: 10%;
-    content:fixed;
-    size: 2rem;
-    color:red;
+.topban{
+    background:rgba(107, 90, 90, 0.7);
+    display:flex;
 }
 
-/* Media queries for responsive design */
-@media only screen and (max-width: 600px) {
-  .navbar ul{
-    flex-direction: column;
-  }
-  .navbar ul li {
-    display: block;
-    margin: 10px 0;
-  }
-  .logotxt {
-    visibility: collapse;
-  }
-  .content {
-    top: 30%;
-  }
+div button{
+    width:200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color:white;
+    cursor:pointer;
+    border-width: 100%;
+}
+
+button:hover{
+     border: 2px solid green;
+    transition: 0.5s;
+    left:0;
+    bottom:0;
+    border-width: 100%;
+
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+    .navbar ul li {
+        margin: 10px 0;
+        border: 0.2rem solid rgba(107, 90, 90, 0.7);
+    }
+    .navbar ul li a{
+        border: 0.2rem solid rgba(43, 30, 30, 0.7);
+        padding: 5%;
+        display: relative;
+    }
+    .navbar{
+        font-size: 25px;
+        padding:5%;
+    }
+    .logo {
+       height: 2rem;
+       width:2rem;
+    }
+    .content{
+        font-size: 3rem;
+    }
+    .navbar{
+        display:flex;
+    }
+    .banner{
+        height:100%;
+        width:100%;
+    }
+    .logotxt{
+            font-size: 2rem;
+    }
+    .content h1{
+        font-size: 3rem;
+    }
+
+
+}
+@media (min-width: 600px) {
+    .banner {
+        height:100vh;
+    }
 }

@@ -7,24 +7,25 @@
     <HEAD><TITLE>Register</TITLE></HEAD>
     <BODY>
         <div class="banner">
-        <span class="topban">
-        <div class="navbar">
-            <img src="../Pics/logo.png" class="logo"><h1 class="logotxt">Sarjak Budget Helper</h1>
-            <ul>
-                <li><a href="../index.php">Home</a></li>
-                <li><a href="../HTML/HOME.php">Login</a></li>
-                <li><a href="../HTML/Support.html">Support</a></li>
-            </ul>
-        </div> 
-        </span>
-        <div class="content">
-             <span class="loginbox">   
-            <form name="regst"  action="../PHP/adduser.php"  onsubmit="return validateForm()" method="post">
-            <br>Username: <input type="text" id="User"  name="User">
-            <br>Password: <input type="password" id="pass" name="pass"><br>
-            <input type="Submit" class="butt" value="Register">
-            </form>
-        </span>
-         </Form>
+            <span class="topban">
+                <div class="navbar">
+                    <img src="../Pics/logo.png" class="logo"><h1 class="logotxt">Sarjak Budget Helper</h1>
+                        <ul>
+                            <li><a href="../index.php">Home</a></li>
+                            <li><a href="../HTML/HOME.php">Login</a></li>
+                            <li><a href="../HTML/Support.html">Support</a></li>
+                        </ul>
+                </div> 
+            </span>
+
+            <span class="loginbox"><center>
+                    <form name="regst" onsubmit="return validateForm()" method="post" action="../PHP/adduser.php"><center>
+                    <br>Username: <input type="text" id="User" name="User">
+                    <br>Password: <input type="password" id="pass" name="pass"><br>
+                    <input type="Submit" class="butt" value="Register for Free" name="login"></center>
+                    </form>  </center>
+            </span>
+
         </div>
-    </span>
+    </body>
+</html>
