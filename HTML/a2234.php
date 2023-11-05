@@ -17,7 +17,7 @@
     <div class="canvas">
             <div class="subban">
                 <ul>
-                    <li><a href="../HTML/edt2234.php">Edit</a></li>
+                    <li><a href="../HTML/ediexp.php">Edit</a></li>
                     <li><a href="../HTML/exp.php">View</a></li>
                     <li><a href="../HTML/dashboard.php">Back</a></li>
                 </ul>
@@ -27,7 +27,7 @@
                 <div class="Ment">
                 <center>   
                     <H1>Expenditure - ADD</H1>
-                    <tr><form name="ent" onsubmit="return validateForm()" method="post" action="../PHP/adexp.php">
+                    <form name="ent" onsubmit="return validateForm()" method="post" action="../PHP/adexp.php">
                     <br>Title :<input type="text" name="Title" placeholder="REQUIRED">
                     <br>Amount :<input type="Number" id="amt" name="amt" placeholder="REQUIRED" ><br>
                     <br><div class="catedrop">
@@ -43,6 +43,7 @@
                         <br>Remarks:<input type="text" name="remark" id="remark" placeholder="OPTIONAL"><br>
                         <input type="Submit" class="butt" value="Add" name="submit">
                         </form>
+
     
                     </center>  
                 </div>

@@ -1,4 +1,3 @@
-
 <html lang="en">
     <?php 
         include("../PHP/globvar.php");
@@ -12,15 +11,15 @@
         <link rel="icon" href="../Pics/logo.png">
         <link rel="stylesheet" href="../CSS/tbl2.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <title>EXP-VIEW</title>
+        <title>Business</title>
 
     </head>
     <body>
         <div class="canvas">
             <div class="subban">
                 <ul>
-                    <li><a href="../HTML/a2234.php">Add</a></li>
-                    <li><a href="../HTML/ediexp.php">edit</a></li>
+                    <li><a href="../HTML/bus.php">Add</a></li>
+                    <li><a href="../HTML/edibus.php">edit</a></li>
                     <li><a href="../HTML/dashboard.php">Back</a></li>
                 </ul>
             </div>
@@ -32,19 +31,20 @@
                     die("Connection failed: " . $conn->connect_error);
                     }
 
-                    $sql = "SELECT spnt_name, spnt_amt, category, remarks, date FROM expenditure";
+                    $sql = "SELECT Title, MRP, Discount, Final_price, Sold_to, Paid_status, Date, Remarks, no_itm FROM business";
                     $result = $conn->query($sql);
-
-                    echo "<table><caption>Expenditures - View<caption><tr><th>Sno.</th><th>Spent Name</th><th>Spent Amount</th><th>Category</th><th>Remarks</th><th>Date</th></tr>";
-                    $id=1;
+                    $i=1;
+                    echo "<table><caption>Business - View<caption><tr><th>Sno.</th><th>Sold To</th><th>Title</th><th>MRP</th><th>Number of Items</th><th>Discount</th><th>Final Price</th><th>Paid Status</th><th>Date</th><th>Remarks</th></tr>";
+        
                     if ($result->num_rows > 0) {
                     // output data of each row
                     while($row = $result->fetch_assoc()) {
-                        echo "<tr align='center'><td>".$id."</td><td>".$row["spnt_name"]."</td><td>".$row["spnt_amt"]."</td><td>".$row["category"]."</td><td>".$row["remarks"]."</td><td>".$row["date"]."</td></tr>";
+                        echo "<tr align='center'><td>".$i."</td><td>".$row["Sold_to"]."</td><td>".$row["Title"]."</td><td>".$row["MRP"]."</td><td>".$row["no_itm"]."</td><td>".$row["Discount"]."%</td><td>".$row["Final_price"]."</td><td>".$row["Paid_status"]."</td><td>".$row["Date"]."</td><td>".$row["Remarks"]."</td></tr>";
+                        $i++;
                     }
                     echo "</table>";
                     } else {
-                        echo "<tr><td align='center'>$id</td><td align='center'>Spend Someting!!</td><td align='center'></td><td align='center'>Spend Someting!!</td><td align='center'></td><td></td></tr>";
+                        echo "<tr><td align='center'>$i</td><td align='center'>No records found</td><td align='center'></td><td align='center'></td><td align='center'></td><td align='center'></td><td align='center'></td><td align='center'></td><td align='center'></td><td align='center'></td></tr>";
                     }
                     $conn->close();
                 ?>
