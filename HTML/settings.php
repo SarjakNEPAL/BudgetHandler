@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../CSS/index.css">
         <link rel="icon" type="image/png" href="../Pics/logo.png" sizes="32x32">
-        <title>Dashboard</title>
+        <title>Settings</title>
     </head>
     <body>
         <div class="banner">
@@ -21,12 +21,11 @@
                 </div> 
             </span>
             <div class="content">
-                <p>Hello <?php echo($_SESSION['username'])?>!! You are logged in to the session. Please select the record from list below</p>
+                <p>Hello <?php echo($_SESSION['username'])?>!! You are logged in. Your currency is <?php echo($_SESSION['curr']);?>.</p>
                 <div class="buttons">
-                    <a href="../HTML/exp.php"><button type="button"><span class="butt"></span>Expenditures</button></a>
-                    <a href="../HTML/bus1.php"><button type="button"><span class="butt" ></span>Trade</button></a><br>
-                    <a href="../HTML/savings.php"><button type="button"><span class="butt"></span>Savings</button></a>
-                    <a href="../HTML/settings.php"><button type="button"><span class="butt"></span>Settings</button></a>
+                    <a href="../HTML/settings_2.php"><button type="button"><span class="butt"></span>Change Password</button></a>
+                    <a href="../HTML/settings_1.php"><button type="button"><span class="butt"></span>Change currency</button></a>
+                    <a href="../HTML/dashboard.php"><button type="button"><span class="butt"></span>Back</button></a>
                 </div>
             </div>
         </div>

@@ -39,7 +39,7 @@
                     if ($result->num_rows > 0) {
                     // output data of each row
                     while($row = $result->fetch_assoc()) {
-                        echo "<tr align='center'><td>".$i."</td><td>".$row["Sold_to"]."</td><td>".$row["Title"]."</td><td>".$row["MRP"]."</td><td>".$row["no_itm"]."</td><td>".$row["Discount"]."%</td><td>".$row["Final_price"]."</td><td>".$row["Paid_status"]."</td><td>".$row["Date"]."</td><td>".$row["Remarks"]."</td></tr>";
+                        echo "<tr align='center'><td>".$i."</td><td>".$row["Sold_to"]."</td><td>".$row["Title"]."</td><td>".$_SESSION["curr"].$row["MRP"]."</td><td>".$row["no_itm"]."</td><td>".$row["Discount"]."%</td><td>".$_SESSION["curr"].$row["Final_price"]."</td><td>".$row["Paid_status"]."</td><td>".$row["Date"]."</td><td>".$row["Remarks"]."</td></tr>";
                         $i++;
                     }
                     echo "</table>";

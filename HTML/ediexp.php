@@ -50,7 +50,7 @@
                 $sql = "SELECT spnt_name, spnt_amt, category, remarks, date FROM expenditure";
                 $result = $conn->query($sql);
                 $serial_number = 1;
-                echo '<table id="myTable"><caption>Expenditures - Edit<caption><tr><th>Sno.</th><th>Spent Name</th><th>Spent Amount</th><th>Category</th><th>Remarks</th><th>Date</th></tr>';
+                echo '<table id="myTable"><caption>Expenditures - Edit<caption><tr><th>Sno.</th><th>Spent Name</th><th>Spent Amount ('.$_SESSION['curr'].')</th><th>Category</th><th>Remarks</th><th>Date</th></tr>';
                 if ($result->num_rows > 0) {
                     
                     while($row = $result->fetch_assoc()) {

@@ -59,7 +59,8 @@
                     
                     while($row = $result->fetch_assoc()) {
                         
-                        echo '<tr><td>'.$serial_number.'</td><td>'.htmlentities($row["Sold_to"]).'</td><td>'.htmlentities($row["Title"]).'</td><td>'.htmlentities($row["MRP"]).'</td><td>'.htmlentities($row["no_itm"]).'</td><td>'.htmlentities($row["Discount"]).'%</td><td>'.htmlentities($row["Final_price"]).'</td><td><select onchange="editData(this, \'Paid_status\')"><option '.($row["Paid_status"] == 'Paid' ? 'selected' : '').'>Paid</option><option '.($row["Paid_status"] == 'Unpaid' ? 'selected' : '').'>Unpaid</option></select></td><td>'.htmlentities($row["Date"]).'</td><td>'.htmlentities($row["Remarks"]).'</td><td><button onclick="deleteData(this)">Delete</button></td></tr>';
+                        echo '<tr><td>'.$serial_number.'</td><td>'.htmlentities($row["Sold_to"]).'</td><td>'.htmlentities($row["Title"]).'</td><td>'.htmlentities($_SESSION["curr"]).htmlentities($row["MRP"]).'</td><td>'.htmlentities($row["no_itm"]).'</td><td>'.htmlentities($row["Discount"]).'%</td><td>'.htmlentities($_SESSION["curr"]).htmlentities($row["Final_price"]).'</td><td><select onchange="editData(this, \'Paid_status\')"><option '.($row["Paid_status"] == 'Paid' ? 'selected' : '').'>Paid</option><option '.($row["Paid_status"] == 'Unpaid' ? 'selected' : '').'>Unpaid</option></select></td><td>'.htmlentities($row["Date"]).'</td><td>'.htmlentities($row["Remarks"]).'</td><td><button onclick="deleteData(this)">Delete</button></td></tr>';
+
                         $serial_number++;
                     }
                 } else {

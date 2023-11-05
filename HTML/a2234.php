@@ -29,7 +29,7 @@
                     <H1>Expenditure - ADD</H1>
                     <form name="ent" onsubmit="return validateForm()" method="post" action="../PHP/adexp.php">
                     <br>Title :<input type="text" name="Title" placeholder="REQUIRED">
-                    <br>Amount :<input type="Number" id="amt" name="amt" placeholder="REQUIRED" ><br>
+                    <br>Amount :<?php echo($_SESSION['curr']);?><input type="Number" id="amt" name="amt" placeholder="REQUIRED" ><br>
                     <br><div class="catedrop">
                             <label for="category">Category:</label>
                                 <select name="category" id="category">

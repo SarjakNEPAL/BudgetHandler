@@ -27,7 +27,7 @@
                 <span class="details">
                     <table border="1" >
                         <th>Savings</th>
-                        <Tr><td align=centre><div id="result">Rs:
+                        <Tr><td align=centre><div id="result"><?php echo($_SESSION['curr']);?>
                             <?php 
 
 
@@ -60,8 +60,8 @@
             <span class="loginbox">
                 <form name="savings" method="post" action="../PHP/sav.php">
 
-               <br>Addition: <input type="number" id="add" name="add" value="0">
-                <br>Substraction: <input type="number" id="subs" name="subs" value=0><br>
+               <br>Addition: <?php echo($_SESSION['curr']);?><input type="number" id="add" name="add" value="0">
+                <br>Substraction: <?php echo($_SESSION['curr']);?><input type="number" id="subs" name="subs" value=0><br>
                 <input type="Submit" class="butt" value="Proceed" name="submit">
                  </form>  
                 </span>

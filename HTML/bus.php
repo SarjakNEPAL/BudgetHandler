@@ -31,13 +31,13 @@
                     <input type="text" id="Sold_to" name="Sold_to"><br>
                     <label for="Title">Title:</label><br>
                     <input type="text" id="Title" name="Title"><br>
-                    <label for="MRP">MRP:</label><br>
+                    <label for="MRP">MRP: <?php echo($_SESSION['curr']);?></label><br>
                     <input type="number" id="MRP" name="MRP" step="0.01" value=0><br>
                     <label for="Number_of_items">Number of Items:</label><br>
                     <input type="number" id="Number_of_items" name="Number_of_items"><br>
                     <label for="Discount">Discount in %:</label><br>
                     <input type="number" id="Discount" name="Discount" step="0.01" ><br>
-                    <label for="Final_price">Final Price:</label><br>
+                    <label for="Final_price">Final Price: <?php echo($_SESSION['curr']);?></label><br>
                     <input type="number" id="Final_price" name="Final_price" step="0.01"><br>
                     <label for="Paid_status">Paid Status:</label><br>
                     <input type="text" id="Paid_status" name="Paid_status"><br>

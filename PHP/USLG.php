@@ -39,17 +39,29 @@
                     echo '<script>alert("User not found")</script>';
                 
                 }
-                $conn->close();
+                
                 if($Logged==false)
                 {
                     include("../HTML/HOME.php");
-                    echo("not logged in");
                 }
                 else
                 {
-                include("../HTML/dashboard.php");
+                    $query="select Currency from settings where username='$e'";   
+                    $result = $conn->query($query);
+                    if ($result->num_rows > 0)
+                    {
+                        while($row = $result->fetch_assoc()) {
+                             $r= $row['Currency'];
+                        }
+                    }
+                    else{
+                        $r='रू';
+                    }
+                    $_SESSION['curr']=$r;
+                    include("../HTML/dashboard.php");
                 }
             }
+            $conn->close();
         ?>
     </body>
 </HTML>
