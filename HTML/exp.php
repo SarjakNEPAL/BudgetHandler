@@ -41,7 +41,7 @@
                     // output data of each row
                     while($row = $result->fetch_assoc()) {
                         echo "<tr align='center'><td>".$id."</td><td>".$row["spnt_name"]."</td><td>".$_SESSION["curr"].$row["spnt_amt"]."</td><td>".$row["category"]."</td><td>".$row["remarks"]."</td><td>".$row["date"]."</td></tr>";
-
+                        $id++;
                     }
                     echo "</table>";
                     } else {

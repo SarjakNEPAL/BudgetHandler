@@ -23,6 +23,26 @@ if ($result->num_rows > 0) {
 }
   if ($conn->query($sql) === TRUE){ 
     echo "<script>alert('Currency changed successfully');</script>";
+    switch ($_POST['currency']){
+      case "usd":
+        $_SESSION['curr']="$";
+        break;
+      case "eur":
+        $_SESSION['curr']="€";
+        break;
+      case "jpy":
+        $_SESSION['curr']="¥";
+        break;     
+      case "gbp":
+        $_SESSION['curr']="£";
+        break;
+      case "npr":
+        $_SESSION['curr']="रू";
+        break;
+      case "inr":
+        $_SESSION['curr']="₹";
+        break; 
+    }
   } else {
     echo "<script>alert('Server Timed out');</script>";
   }

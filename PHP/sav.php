@@ -48,7 +48,7 @@
                 $addi=$_POST['add'];
                 $subti=$_POST['subs'];
                 
-                $tot=$row['savings']-$addi -$subti;
+                $tot=$row['savings']+$addi -$subti;
                 $stmt->bind_param('ss',$e,$tot);
                 
                     
