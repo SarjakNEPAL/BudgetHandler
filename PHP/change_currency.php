@@ -47,7 +47,5 @@ if ($result->num_rows > 0) {
     echo "<script>alert('Server Timed out');</script>";
   }
 $conn->close();
-echo "<script>alert('PLEASE LOGIN AGAIN');</script>";
-include("../PHP/logout.php");
-include("../HTML/HOME.php");
+include("../HTML/settings.php");
 ?>
