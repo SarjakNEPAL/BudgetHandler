@@ -51,7 +51,7 @@
                 }
                 
 
-                $sql = "SELECT Title, MRP, Discount, Final_price,Sold_to,Paid_status,Date,Remarks,no_itm FROM business";
+                $sql = "SELECT Title, MRP, Discount, Final_price,Sold_to,Paid_status,Date,Remarks,no_itm FROM business WHERE Username='".$_SESSION['username']."'";
                 $result = $conn->query($sql);
                 $serial_number = 1;
                 echo '<table id="myTable"><caption>Business - Edit<caption><tr><th>Sno.</th><th>Sold to</th><th>Title</th><th>MRP</th><th>No. of item</th><th>Discount</th><th>Final Price</th><th>Paid Status</th><th>Date</th><th>Remarks</th></tr>';

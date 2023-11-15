@@ -32,7 +32,7 @@
                     die("Connection failed: " . $conn->connect_error);
                     }
 
-                    $sql = "SELECT spnt_name, spnt_amt, category, remarks, date FROM expenditure";
+                    $sql = "SELECT spnt_name, spnt_amt, category, remarks, date FROM expenditure WHERE username='".$_SESSION['username']."'";
                     $result = $conn->query($sql);
 
                     echo "<table><caption>Expenditures - View<caption><tr><th>Sno.</th><th>Spent Name</th><th>Spent Amount</th><th>Category</th><th>Remarks</th><th>Date</th></tr>";

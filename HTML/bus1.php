@@ -31,7 +31,7 @@
                     die("Connection failed: " . $conn->connect_error);
                     }
 
-                    $sql = "SELECT Title, MRP, Discount, Final_price, Sold_to, Paid_status, Date, Remarks, no_itm FROM business";
+                    $sql = "SELECT Title, MRP, Discount, Final_price, Sold_to, Paid_status, Date, Remarks, no_itm FROM business WHERE Username='".$_SESSION['username']."'";
                     $result = $conn->query($sql);
                     $i=1;
                     echo "<table><caption>Business - View<caption><tr><th>Sno.</th><th>Sold To</th><th>Title</th><th>MRP</th><th>Number of Items</th><th>Discount</th><th>Final Price</th><th>Paid Status</th><th>Date</th><th>Remarks</th></tr>";
