@@ -28,3 +28,4 @@ CREATE TABLE settings (
     username VARCHAR(50),
     Currency VARCHAR(10)
 );
+Create the business table CREATE TABLE business ( Username VARCHAR(50), Title VARCHAR(100), MRP DECIMAL(10, 2), Discount DECIMAL(10, 2), Final_price DECIMAL(10, 2), Sold_to VARCHAR(100), Paid_status VARCHAR(50), Date VARCHAR(50), Remarks TEXT, no_itm INT
